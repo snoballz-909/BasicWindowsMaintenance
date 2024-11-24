@@ -9,7 +9,7 @@
 # 2. RAM Check will query how many slots are in use and warn if there is less than 2GB of available memory.
 # 3. Perform a System File Check scan to repair courrupt system files.
 # 4. Launch Reliability Monitor to manually check for reoccuring application faults.
-# 5. Clear browser data will clear browser data such as Cookies, Cache and History from Edge, Chrome, Firfox and Brave.
+# 5. Clear browser data will clear browser data such as Cookies, Cache and History from Edge, Chrome, Firefox and Brave.
 # 6. Perform a Windows Update by first installing the NuGet package manager to then install PSWindowsUpdate to perform the Windows Update.
 
 $asciiArt = @"
