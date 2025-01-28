@@ -1,16 +1,18 @@
-﻿# .\WindowsMaintenance.ps1
-# Author: snoballz-909
-# Date: 21/11/24
+<#
+.\WindowsMaintenance.ps1
+Author: snoballz-909
+Date: 21/11/24
 
-# Description:
-# A simple PowerShell script to perform basic maintenance tasks with hardware checks along with the cleanup of redundant files and a Windows Update.
-# This script will perform the following tasks:
-# 1. Disk Storage Check which will warn when C drive is over 80% usage.
-# 2. RAM Check will query how many slots are in use and warn if there is less than 2GB of available memory.
-# 3. Perform a System File Check scan to repair courrupt system files.
-# 4. Launch Reliability Monitor to manually check for reoccuring application faults.
-# 5. Clear browser data will clear browser data such as Cookies, Cache and History from Edge, Chrome, Firefox and Brave.
-# 6. Perform a Windows Update by first installing the NuGet package manager to then install PSWindowsUpdate to perform the Windows Update.
+Description:
+A simple PowerShell script to perform basic maintenance tasks with hardware checks along with the cleanup of redundant files and a Windows Update.
+This script will perform the following tasks:
+1. Disk Storage Check which will warn when C drive is over 80% usage.
+2. RAM Check will query how many slots are in use and warn if there is less than 2GB of available memory.
+3. Perform a System File Check scan to repair courrupt system files.
+4. Launch Reliability Monitor to manually check for reoccuring application faults.
+5. Clear browser data will clear browser data such as Cookies, Cache and History from Edge, Chrome, Firefox and Brave.
+6. Perform a Windows Update by first installing the NuGet package manager to then install PSWindowsUpdate to perform the Windows Update.
+#>
 
 $asciiArt = @"
 
